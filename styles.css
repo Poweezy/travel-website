@@ -1531,3 +1531,268 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #dc2626;
 }
+
+/* Legal Pages Styles */
+.section-legal {
+  background: linear-gradient(to bottom, #1e293b, #000000);
+  padding: 8rem 0 5rem;
+  min-height: 100vh;
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.legal-date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+}
+
+.legal-content h2 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 3rem 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f97316;
+}
+
+.legal-content h3 {
+  color: #f97316;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+}
+
+.legal-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.legal-content ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+  list-style-type: disc;
+}
+
+.legal-content li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.nav-logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* About page specific styles */
+.about-hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+}
+
+.about-hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.about-hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.story-content, .mission-content {
+    line-height: 1.8;
+}
+
+.story-paragraph, .mission-text {
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+.about-icon-container {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-feature-icon {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-member-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.team-member-role {
+    color: #f97316;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.team-member-bio {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.commitments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.commitment-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.commitment-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.commitment-icon {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+}
+
+.commitment-icon-svg {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+.commitment-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 1rem;
+}
+
+.commitment-description {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.about-cta-content {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
+.about-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-link.active {
+    color: #f97316;
+    font-weight: 600;
+}
+
+/* Mobile responsiveness for about page */
+@media (max-width: 768px) {
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-cta-buttons .hero-btn-primary,
+    .about-cta-buttons .hero-btn-secondary {
+        width: 100%;
+        max-width: 300px;
+    }
+}

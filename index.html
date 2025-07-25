@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Eswatini - Experience the heart of Africa with authentic culture, wildlife safaris, and luxury accommodations">
-    <title>Discover Eswatini - Heart of Africa Travel</title>
+    <meta name="description" content="Discover Eswatini - Experience the heart of Africa with authentic culture, wildlife safaris, and luxury accommodations. Expert-guided tours, Big Five safaris, cultural ceremonies, and premium lodges.">
+    <meta name="keywords" content="Eswatini tourism, Swaziland travel, African safari, Big Five, Reed Dance ceremony, cultural tours, luxury lodges, wildlife safari, Hlane Royal Park, Mkhaya Reserve">
+    <meta name="author" content="Discover Eswatini">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://discovereswatini.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://discovereswatini.com">
+    <meta property="og:title" content="Discover Eswatini - Heart of Africa Travel">
+    <meta property="og:description" content="Experience authentic African culture, Big Five safaris, and luxury accommodations in the Kingdom of Eswatini. Book your unforgettable adventure today.">
+    <meta property="og:image" content="https://discovereswatini.com/public/sunset.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Discover Eswatini">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://discovereswatini.com">
+    <meta property="twitter:title" content="Discover Eswatini - Heart of Africa Travel">
+    <meta property="twitter:description" content="Experience authentic African culture, Big Five safaris, and luxury accommodations in the Kingdom of Eswatini.">
+    <meta property="twitter:image" content="https://discovereswatini.com/public/sunset.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <title>Discover Eswatini - Heart of Africa Travel | Authentic Safaris & Cultural Tours</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Discover Eswatini",
+        "description": "Experience authentic African culture, Big Five safaris, and luxury accommodations in the Kingdom of Eswatini",
+        "url": "https://discovereswatini.com",
+        "logo": "https://discovereswatini.com/public/sunset.png",
+        "image": "https://discovereswatini.com/public/sunset.png",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mbabane",
+            "addressCountry": "SZ"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+268-7654-3210",
+            "contactType": "customer service",
+            "availableLanguage": ["English"]
+        },
+        "sameAs": [
+            "https://wa.me/2687654321"
+        ],
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Reed Dance Ceremony Tours",
+                "description": "Witness the sacred Umhlanga ceremony where thousands of maidens celebrate Swazi heritage"
+            },
+            {
+                "@type": "Offer", 
+                "name": "Big Five Safari Tours",
+                "description": "Encounter elephants, lions, rhinos, leopards and buffalo in pristine national parks"
+            },
+            {
+                "@type": "Offer",
+                "name": "Luxury Accommodations",
+                "description": "Stay in world-class lodges and luxury tented camps surrounded by African wilderness"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -24,8 +96,9 @@
                     <a href="#wildlife" class="nav-link">Wildlife</a>
                     <a href="#luxury" class="nav-link">Luxury</a>
                     <a href="#visa" class="nav-link">Visa</a>
+                    <a href="about.html" class="nav-link">About</a>
                     <a href="#contact" class="nav-link">Contact</a>
-                    <a href="https://wa.me/+2687654321?text=Hello! I'm interested in Eswatini travel packages" class="nav-book-btn">
+                    <a href="https://wa.me/+2687654321?text=Hello! I'm interested in Eswatini travel packages" class="nav-book-btn" onclick="trackWhatsAppClick('nav_book_now')">
                         Book Now
                     </a>
                 </div>
@@ -44,8 +117,9 @@
                 <a href="#wildlife" class="nav-link">Wildlife</a>
                 <a href="#luxury" class="nav-link">Luxury</a>
                 <a href="#visa" class="nav-link">Visa</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="https://wa.me/+2687654321?text=Hello! I'm interested in Eswatini travel packages" class="nav-book-btn">
+                <a href="https://wa.me/+2687654321?text=Hello! I'm interested in Eswatini travel packages" class="nav-book-btn" onclick="trackWhatsAppClick('mobile_nav_book_now')">
                     Book Now
                 </a>
             </div>
@@ -76,7 +150,7 @@
                         Explore Packages <i data-lucide="arrow-right"></i>
                     </a>
                     
-                    <a href="https://wa.me/+2687654321?text=Hello! I'd like to learn more about Eswatini travel packages" class="hero-btn-secondary">
+                    <a href="https://wa.me/+2687654321?text=Hello! I'd like to learn more about Eswatini travel packages" class="hero-btn-secondary" onclick="trackWhatsAppClick('hero_contact_us')">
                         <i data-lucide="message-circle"></i> Contact Us
                     </a>
                 </div>
@@ -851,11 +925,22 @@
                 <div class="footer-section">
                     <h4>Destinations</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Hlane Royal Park</a></li>
-                        <li><a href="#">Mlilwane Sanctuary</a></li>
-                        <li><a href="#">Mkhaya Reserve</a></li>
-                        <li><a href="#">Malolotja Reserve</a></li>
-                        <li><a href="#">Mantenga Village</a></li>
+                        <li><a href="#wildlife">Hlane Royal Park</a></li>
+                        <li><a href="#wildlife">Mlilwane Sanctuary</a></li>
+                        <li><a href="#wildlife">Mkhaya Reserve</a></li>
+                        <li><a href="#wildlife">Malolotja Reserve</a></li>
+                        <li><a href="#culture">Mantenga Village</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#visa">Visa Requirements</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -880,11 +965,42 @@
 
             <div class="footer-bottom">
                 <p class="footer-copyright">
-                    © 2025 Discover Eswatini. All rights reserved. | Privacy Policy | Terms of Service
+                    © 2025 Discover Eswatini. All rights reserved. | <a href="privacy.html" style="color: #f97316;">Privacy Policy</a> | <a href="terms.html" style="color: #f97316;">Terms of Service</a>
                 </p>
             </div>
         </div>
     </footer>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            page_title: 'Discover Eswatini - Heart of Africa Travel',
+            page_location: window.location.href,
+            send_page_view: true
+        });
+        
+        // Enhanced ecommerce tracking for booking events
+        function trackBookingInterest(packageType) {
+            gtag('event', 'booking_interest', {
+                event_category: 'engagement',
+                event_label: packageType,
+                value: 1
+            });
+        }
+        
+        // Track WhatsApp clicks
+        function trackWhatsAppClick(source) {
+            gtag('event', 'whatsapp_click', {
+                event_category: 'contact',
+                event_label: source,
+                value: 1
+            });
+        }
+    </script>
 
     <!-- PostHog Analytics -->
     <script>

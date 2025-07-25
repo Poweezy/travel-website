@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://discovereswatini.com/sitemap.xml
+
+# Block access to admin areas if any
+Disallow: /admin/
+Disallow: /private/
+
+# Allow access to CSS and JS files
+Allow: /styles.css
+Allow: /script.js
+Allow: /public/
