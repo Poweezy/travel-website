@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Eswatini - Experience the heart of Africa with authentic culture, wildlife safaris, and luxury accommodations">
+    <title>Discover Eswatini - Heart of Africa Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" id="navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    Discover Eswatini
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-menu">
+                    <a href="#experiences" class="nav-link">Experiences</a>
+                    <a href="#culture" class="nav-link">Culture</a>
+                    <a href="#wildlife" class="nav-link">Wildlife</a>
+                    <a href="#luxury" class="nav-link">Luxury</a>
+                    <a href="#visa" class="nav-link">Visa</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="https://wa.me/+2687654321?text=Hello! I'm interested in Eswatini travel packages" class="nav-book-btn">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                    <i data-lucide="x" id="close-icon" style="display: none;"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="#experiences" class="nav-link">Experiences</a>
+                <a href="#culture" class="nav-link">Culture</a>
+                <a href="#wildlife" class="nav-link">Wildlife</a>
+                <a href="#luxury" class="nav-link">Luxury</a>
+                <a href="#visa" class="nav-link">Visa</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://wa.me/+2687654321?text=Hello! I'm interested in Eswatini travel packages" class="nav-book-btn">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <h1 class="hero-title">
+                    Experience the
+                    <span class="hero-gradient-text"> Heart </span>
+                    of Africa
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Discover Eswatini's rich heritage, majestic wildlife, and luxury accommodations. 
+                    From the sacred Reed Dance ceremony to Big Five safaris.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#experiences" class="hero-btn-primary">
+                        Explore Packages <i data-lucide="arrow-right"></i>
+                    </a>
+                    
+                    <a href="https://wa.me/+2687654321?text=Hello! I'd like to learn more about Eswatini travel packages" class="hero-btn-secondary">
+                        <i data-lucide="message-circle"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-animation">
+                <span style="font-size: 0.875rem; margin-bottom: 0.5rem;">Scroll to discover</span>
+                <div class="scroll-mouse">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="section section-experiences">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Unforgettable
+                    <span class="hero-gradient-text"> Experiences</span>
+                </h2>
+                <p class="section-subtitle">
+                    From ancient traditions to luxury safaris, discover the magic that makes Eswatini unique
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 grid-sm-2 grid-lg-3">
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="public/reed-dance.png" alt="Reed Dance Ceremony">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3 class="card-title">Reed Dance Ceremony</h3>
+                        <p class="card-description">Witness the sacred Umhlanga ceremony where thousands of maidens celebrate Swazi heritage in September</p>
+                        
+                        <div class="card-highlights">
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>Cultural immersion experience</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>Royal village access</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>Traditional performances</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.thekingdomofeswatini.com/eswatini-experiences/events/umhlanga-reed-dance/" target="_blank" rel="noopener noreferrer" class="card-button">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="public/rhino.jpeg" alt="Big Five Safaris">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3 class="card-title">Big Five Safaris</h3>
+                        <p class="card-description">Encounter elephants, lions, rhinos, leopards and buffalo in pristine national parks</p>
+                        
+                        <div class="card-highlights">
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>Hlane Royal National Park</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>Professional guides</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>Premium game vehicles</span>
+                            </div>
+                        </div>
+                        
+                        <button class="card-button">Learn More</button>
+                    </div>
+                </div>
+                
+                <div class="experience-card">
+                    <div class="card-image">
+                        <img src="public/hilton.png" alt="Luxury Accommodations">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <h3 class="card-title">Luxury Accommodations</h3>
+                        <p class="card-description">Stay in world-class lodges and luxury tented camps surrounded by African wilderness</p>
+                        
+                        <div class="card-highlights">
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>5-star amenities</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>Panoramic views</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="check-circle" class="highlight-icon"></i>
+                                <span>Fine dining experiences</span>
+                            </div>
+                        </div>
+                        
+                        <button class="card-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Heritage Section -->
+    <section id="culture" class="section section-culture">
+        <div class="culture-background">
+            <div class="culture-bg-overlay"></div>
+            <img src="public/cultural-village.png" alt="Cultural dance" class="culture-bg-image">
+        </div>
+        
+        <div class="section-container">
+            <div class="culture-content">
+                <div class="culture-text">
+                    <h2 class="culture-title">
+                        Rich Cultural
+                        <span class="hero-gradient-text"> Heritage</span>
+                    </h2>
+                    
+                    <p class="culture-description">
+                        Immerse yourself in the ancient traditions of the Swazi people. Experience authentic cultural ceremonies, 
+                        traditional crafts, and the warm hospitality that defines Eswatini.
+                    </p>
+
+                    <div class="culture-features">
+                        <div class="culture-feature">
+                            <i data-lucide="calendar" class="feature-icon"></i>
+                            <div>
+                                <h3 class="feature-title">Reed Dance Festival</h3>
+                                <p class="feature-description">September 1, 2025 - Witness thousands of maidens in traditional ceremony</p>
+                            </div>
+                        </div>
+                        
+                        <div class="culture-feature">
+                            <i data-lucide="users" class="feature-icon"></i>
+                            <div>
+                                <h3 class="feature-title">Traditional Villages</h3>
+                                <p class="feature-description">Experience authentic Swazi lifestyle in Mantenga Cultural Village</p>
+                            </div>
+                        </div>
+                        
+                        <div class="culture-feature">
+                            <i data-lucide="camera" class="feature-icon"></i>
+                            <div>
+                                <h3 class="feature-title">Royal Ceremonies</h3>
+                                <p class="feature-description">Exclusive access to royal celebrations and cultural events</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/+2687654321?text=I'm interested in cultural experiences in Eswatini" class="culture-cta">
+                        <i data-lucide="message-circle"></i>
+                        Book Cultural Tour
+                    </a>
+                </div>
+
+                <div class="culture-images">
+                    <img src="public/umhlanga.jpg" alt="Traditional attire" class="culture-image">
+                    <img src="public/incwala.jpg" alt="Cultural performance" class="culture-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wildlife Section -->
+    <section id="wildlife" class="section section-wildlife">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Incredible
+                    <span class="hero-gradient-text"> Wildlife</span>
+                </h2>
+                <p class="section-subtitle">
+                    Home to the Big Five and countless other species in pristine national parks and reserves
+                </p>
+            </div>
+
+            <div class="wildlife-content">
+                <div class="wildlife-image-container">
+                    <img src="public/hlane.jpg" alt="Elephant herd" class="wildlife-image">
+                    <div class="wildlife-image-overlay"></div>
+                </div>
+
+                <div class="wildlife-text">
+                    <h3>Big Five Adventures</h3>
+                    <p class="wildlife-description">
+                        Experience the thrill of encountering Africa's most iconic animals in their natural habitat. 
+                        Our expert guides ensure safe, memorable encounters with elephants, lions, rhinos, leopards, and buffalo.
+                    </p>
+
+                    <div class="wildlife-parks">
+                        <div class="park-card">
+                            <h4 class="park-name">Hlane Royal Park</h4>
+                            <p class="park-animals">Lions & Elephants</p>
+                        </div>
+                        <div class="park-card">
+                            <h4 class="park-name">Mkhaya Reserve</h4>
+                            <p class="park-animals">Black Rhinos</p>
+                        </div>
+                        <div class="park-card">
+                            <h4 class="park-name">Mlilwane Sanctuary</h4>
+                            <p class="park-animals">Antelope & Birds</p>
+                        </div>
+                        <div class="park-card">
+                            <h4 class="park-name">Malolotja Reserve</h4>
+                            <p class="park-animals">Mountain Wildlife</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/+2687654321?text=I want to book a Big Five safari in Eswatini" class="wildlife-cta">
+                        Book Safari <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Section -->
+    <section id="luxury" class="section section-luxury">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Luxury
+                    <span class="hero-gradient-text"> Retreats</span>
+                </h2>
+                <p class="section-subtitle">
+                    World-class accommodations offering unparalleled comfort in the heart of Africa
+                </p>
+            </div>
+
+            <div class="luxury-grid">
+                <div class="luxury-card">
+                    <div class="luxury-card-image">
+                        <img src="public/nisela.jpg" alt="Safari Lodges">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    
+                    <div class="luxury-card-content">
+                        <h3 class="luxury-card-title">Safari Lodges</h3>
+                        <p class="luxury-card-description">Luxury lodges with panoramic views of the African wilderness</p>
+                        
+                        <div class="luxury-amenities">
+                            <div class="amenity-item">
+                                <i data-lucide="star" class="amenity-icon"></i>
+                                <span class="amenity-text">5-star service</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i data-lucide="star" class="amenity-icon"></i>
+                                <span class="amenity-text">Gourmet dining</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i data-lucide="star" class="amenity-icon"></i>
+                                <span class="amenity-text">Spa treatments</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i data-lucide="star" class="amenity-icon"></i>
+                                <span class="amenity-text">Game viewing decks</span>
+                            </div>
+                        </div>
+                        
+                        <button class="card-button">Check Availability</button>
+                    </div>
+                </div>
+                
+                <div class="luxury-card">
+                    <div class="luxury-card-image">
+                        <img src="public/mbuluzi-tented-camp.png" alt="Tented Camps">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    
+                    <div class="luxury-card-content">
+                        <h3 class="luxury-card-title">Tented Camps</h3>
+                        <p class="luxury-card-description">Elegant tented accommodations for an authentic safari experience</p>
+                        
+                        <div class="luxury-amenities">
+                            <div class="amenity-item">
+                                <i data-lucide="star" class="amenity-icon"></i>
+                                <span class="amenity-text">Private bathrooms</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i data-lucide="star" class="amenity-icon"></i>
+                                <span class="amenity-text">Air conditioning</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i data-lucide="star" class="amenity-icon"></i>
+                                <span class="amenity-text">Butler service</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i data-lucide="star" class="amenity-icon"></i>
+                                <span class="amenity-text">Private terraces</span>
+                            </div>
+                        </div>
+                        
+                        <button class="card-button">Check Availability</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa Requirements Section -->
+    <section id="visa" class="section section-visa">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Visa
+                    <span class="hero-gradient-text"> Requirements</span>
+                </h2>
+                <p class="section-subtitle">
+                    Essential visa information and assistance to make your journey to Eswatini seamless
+                </p>
+            </div>
+
+            <!-- Visa Free Countries -->
+            <div class="visa-free-section">
+                <h3 class="visa-section-title">No Visa Required</h3>
+                <p class="visa-description">
+                    Citizens from over 90 countries can enter Eswatini without a visa for tourism or business purposes
+                </p>
+                
+                <div class="visa-countries-grid">
+                    <div class="visa-region-card">
+                        <h4 class="region-title">Africa</h4>
+                        <ul class="countries-list">
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                South Africa (30 days)
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Botswana
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Namibia
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Mauritius
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Kenya
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Tanzania
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="visa-region-card">
+                        <h4 class="region-title">Europe</h4>
+                        <ul class="countries-list">
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                United Kingdom (30 days)
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Germany
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                France
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Italy
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Spain
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Netherlands
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="visa-region-card">
+                        <h4 class="region-title">Americas</h4>
+                        <ul class="countries-list">
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                United States (30 days)
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Canada
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Brazil
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Argentina
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Jamaica
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Barbados
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="visa-region-card">
+                        <h4 class="region-title">Asia & Oceania</h4>
+                        <ul class="countries-list">
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Singapore
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Malaysia
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                South Korea
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Australia
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                New Zealand
+                            </li>
+                            <li class="country-item">
+                                <i data-lucide="check-circle" class="check-icon"></i>
+                                Japan
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- eVisa Section -->
+            <div class="evisa-section">
+                <h3 class="visa-section-title">Electronic Visa (eVisa)</h3>
+                <p class="visa-description">
+                    Fast and convenient online visa application for eligible travelers
+                </p>
+
+                <div class="evisa-types">
+                    <div class="evisa-card">
+                        <div class="evisa-header">
+                            <div class="visa-icon-container">
+                                <i data-lucide="camera" class="visa-type-icon"></i>
+                            </div>
+                            <h4 class="evisa-title">Tourist eVisa</h4>
+                        </div>
+                        
+                        <div class="evisa-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">30 days stay</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Validity:</span>
+                                <span class="detail-value">90 days from issue</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Processing:</span>
+                                <span class="detail-value">2-5 business days</span>
+                            </div>
+                        </div>
+
+                        <div class="requirements-section">
+                            <h5 class="requirements-title">Required Documents:</h5>
+                            <ul class="requirements-list">
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Valid passport (6+ months)
+                                </li>
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Passport photo
+                                </li>
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Flight tickets
+                                </li>
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Accommodation proof
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="evisa-card">
+                        <div class="evisa-header">
+                            <div class="visa-icon-container">
+                                <i data-lucide="globe" class="visa-type-icon"></i>
+                            </div>
+                            <h4 class="evisa-title">Business eVisa</h4>
+                        </div>
+                        
+                        <div class="evisa-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">30 days stay</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Validity:</span>
+                                <span class="detail-value">90 days from issue</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Processing:</span>
+                                <span class="detail-value">2-5 business days</span>
+                            </div>
+                        </div>
+
+                        <div class="requirements-section">
+                            <h5 class="requirements-title">Required Documents:</h5>
+                            <ul class="requirements-list">
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Valid passport (6+ months)
+                                </li>
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Passport photo
+                                </li>
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Invitation letter
+                                </li>
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Bank statements
+                                </li>
+                                <li class="requirement-item">
+                                    <i data-lucide="check-circle" class="req-check"></i>
+                                    Travel itinerary
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visa Assistance -->
+            <div class="visa-assistance">
+                <h3 class="visa-section-title">Visa Assistance Services</h3>
+                <p class="visa-description">
+                    Let us help you navigate the visa process with our professional assistance
+                </p>
+
+                <div class="assistance-services">
+                    <div class="assistance-card">
+                        <div class="service-icon-container">
+                            <i data-lucide="check-circle" class="service-icon"></i>
+                        </div>
+                        <h4 class="service-title">Document Review</h4>
+                        <p class="service-description">We check your documents before submission to ensure everything is correct</p>
+                    </div>
+                    
+                    <div class="assistance-card">
+                        <div class="service-icon-container">
+                            <i data-lucide="users" class="service-icon"></i>
+                        </div>
+                        <h4 class="service-title">Application Support</h4>
+                        <p class="service-description">Step-by-step guidance through the eVisa application process</p>
+                    </div>
+                    
+                    <div class="assistance-card">
+                        <div class="service-icon-container">
+                            <i data-lucide="globe" class="service-icon"></i>
+                        </div>
+                        <h4 class="service-title">Status Tracking</h4>
+                        <p class="service-description">We monitor your application status and keep you updated</p>
+                    </div>
+                    
+                    <div class="assistance-card">
+                        <div class="service-icon-container">
+                            <i data-lucide="calendar" class="service-icon"></i>
+                        </div>
+                        <h4 class="service-title">Emergency Processing</h4>
+                        <p class="service-description">Expedited processing for urgent travel requirements</p>
+                    </div>
+                </div>
+
+                <div class="visa-cta-section">
+                    <div class="visa-cta-content">
+                        <h4 class="cta-title">Need Visa Assistance?</h4>
+                        <p class="cta-description">
+                            Our travel experts are ready to help you with your visa application and ensure a smooth process
+                        </p>
+                        <div class="visa-cta-buttons">
+                            <a href="https://wa.me/+2687654321?text=Hi! I need help with my Eswatini visa application" class="visa-btn-primary">
+                                <i data-lucide="message-circle"></i>
+                                Get Visa Help
+                            </a>
+                            <a href="https://evisa.gov.sz" target="_blank" rel="noopener noreferrer" class="visa-btn-secondary">
+                                <i data-lucide="globe"></i>
+                                Apply Online
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Notes -->
+            <div class="visa-notes">
+                <h3 class="notes-title">Important Notes</h3>
+                <div class="notes-grid">
+                    <div class="note-item">
+                        <i data-lucide="heart" class="note-icon"></i>
+                        <div>
+                            <h4 class="note-title">Health Requirements</h4>
+                            <p class="note-text">Yellow fever vaccination required from risk areas</p>
+                        </div>
+                    </div>
+                    <div class="note-item">
+                        <i data-lucide="calendar" class="note-icon"></i>
+                        <div>
+                            <h4 class="note-title">Processing Time</h4>
+                            <p class="note-text">Apply at least 1 week before travel for eVisa</p>
+                        </div>
+                    </div>
+                    <div class="note-item">
+                        <i data-lucide="check-circle" class="note-icon"></i>
+                        <div>
+                            <h4 class="note-title">Extensions</h4>
+                            <p class="note-text">eVisas cannot be extended - plan accordingly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact">
+        <div class="contact-background">
+            <img src="https://images.unsplash.com/photo-1586031489655-c933704cffae" alt="African sunset" class="contact-bg-image">
+            <div class="contact-bg-overlay"></div>
+        </div>
+        
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Start Your
+                    <span class="hero-gradient-text"> Journey</span>
+                </h2>
+                <p class="section-subtitle">
+                    Ready to experience the magic of Eswatini? Contact us today to plan your unforgettable adventure.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="https://wa.me/+2687654321?text=Hello! I'm interested in planning a trip to Eswatini" class="contact-item">
+                        <div class="contact-icon whatsapp">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>+268 7654 3210</p>
+                            <p class="highlight">Click to chat instantly</p>
+                        </div>
+                    </a>
+
+                    <div class="contact-item">
+                        <div class="contact-icon email">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@discovereswatini.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon location">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Mbabane, Eswatini</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 class="form-title">Quick Inquiry</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select" required>
+                                <option value="">Select Experience</option>
+                                <option value="cultural">Cultural Tours</option>
+                                <option value="safari">Safari Adventures</option>
+                                <option value="luxury">Luxury Retreats</option>
+                                <option value="adventure">Adventure Activities</option>
+                                <option value="business">Business Travel</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your dream trip..." rows="4" class="form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Discover Eswatini</h3>
+                    <p class="footer-description">
+                        Your gateway to experiencing the heart of Africa. Authentic culture, 
+                        incredible wildlife, and luxury accommodations await.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Experiences</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Reed Dance Ceremony</a></li>
+                        <li><a href="#">Big Five Safaris</a></li>
+                        <li><a href="#">Cultural Villages</a></li>
+                        <li><a href="#">Luxury Lodges</a></li>
+                        <li><a href="#">Adventure Tours</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Hlane Royal Park</a></li>
+                        <li><a href="#">Mlilwane Sanctuary</a></li>
+                        <li><a href="#">Mkhaya Reserve</a></li>
+                        <li><a href="#">Malolotja Reserve</a></li>
+                        <li><a href="#">Mantenga Village</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" class="footer-contact-icon"></i>
+                            <span class="footer-contact-text">+268 7654 3210</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" class="footer-contact-icon"></i>
+                            <span class="footer-contact-text">info@discovereswatini.com</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" class="footer-contact-icon"></i>
+                            <span class="footer-contact-text">Mbabane, Eswatini</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 Discover Eswatini. All rights reserved. | Privacy Policy | Terms of Service
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PostHog Analytics -->
+    <script>
+        !(function (t, e) {
+            var o, n, p, r;
+            e.__SV ||
+                ((window.posthog = e),
+                (e._i = []),
+                (e.init = function (i, s, a) {
+                    function g(t, e) {
+                        var o = e.split(".");
+                        2 == o.length && ((t = t[o[0]]), (e = o[1])),
+                            (t[e] = function () {
+                                t.push(
+                                    [e].concat(
+                                        Array.prototype.slice.call(
+                                            arguments,
+                                            0,
+                                        ),
+                                    ),
+                                );
+                            });
+                    }
+                    ((p = t.createElement("script")).type =
+                        "text/javascript"),
+                        (p.crossOrigin = "anonymous"),
+                        (p.async = !0),
+                        (p.src =
+                            s.api_host.replace(
+                                ".i.posthog.com",
+                                "-assets.i.posthog.com",
+                            ) + "/static/array.js"),
+                        (r =
+                            t.getElementsByTagName(
+                                "script",
+                            )[0]).parentNode.insertBefore(p, r);
+                    var u = e;
+                    for (
+                        void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                            u.people = u.people || [],
+                            u.toString = function (t) {
+                                var e = "posthog";
+                                return (
+                                    "posthog" !== a && (e += "." + a),
+                                    t || (e += " (stub)"),
+                                    e
+                                );
+                            },
+                            u.people.toString = function () {
+                                return u.toString(1) + ".people (stub)";
+                            },
+                            o =
+                                "init me ws ys ps bs capture je Di ks register register_once register_for_session unregister unregister_for_session Ps getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Es $s createPersonProfile Is opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ss debug xs getPageViewId captureTraceFeedback captureTraceMetric".split(
+                                    " ",
+                                ),
+                            n = 0;
+                        n < o.length;
+                        n++
+                    )
+                        g(u, o[n]);
+                    e._i.push([i, s, a]);
+                }),
+                (e.__SV = 1));
+        })(document, window.posthog || []);
+        posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE", {
+            api_host: "https://us.i.posthog.com",
+            person_profiles: "identified_only",
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
