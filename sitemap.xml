@@ -24,4 +24,55 @@
         <priority>0.3</priority>
         <changefreq>monthly</changefreq>
     </url>
+    
+    <!-- FAQ Section -->
+    <url>
+        <loc>https://discovereswatini.com/#faq</loc>
+        <lastmod>2025-07-25</lastmod>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    
+    <!-- Main Sections -->
+    <url>
+        <loc>https://discovereswatini.com/#experiences</loc>
+        <lastmod>2025-07-25</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://discovereswatini.com/#culture</loc>
+        <lastmod>2025-07-25</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://discovereswatini.com/#wildlife</loc>
+        <lastmod>2025-07-25</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://discovereswatini.com/#luxury</loc>
+        <lastmod>2025-07-25</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://discovereswatini.com/#visa</loc>
+        <lastmod>2025-07-25</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
+        <loc>https://discovereswatini.com/#contact</loc>
+        <lastmod>2025-07-25</lastmod>
+        <priority>0.8</priority>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>

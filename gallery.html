@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo Gallery - Discover the beauty of Eswatini through stunning imagery of wildlife, culture, and landscapes.">
+    <title>Gallery - Discover Eswatini</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" id="navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">Discover Eswatini</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-menu">
+                    <a href="index.html#experiences" class="nav-link">Experiences</a>
+                    <a href="index.html#culture" class="nav-link">Culture</a>
+                    <a href="index.html#wildlife" class="nav-link">Wildlife</a>
+                    <a href="index.html#luxury" class="nav-link">Luxury</a>
+                    <a href="index.html#visa" class="nav-link">Visa</a>
+                    <a href="index.html#faq" class="nav-link">FAQ</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="https://wa.me/+2687654321?text=Hello! I'm interested in Eswatini travel packages" class="nav-book-btn">
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                    <i data-lucide="x" id="close-icon" style="display: none;"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="index.html#experiences" class="nav-link">Experiences</a>
+                <a href="index.html#culture" class="nav-link">Culture</a>
+                <a href="index.html#wildlife" class="nav-link">Wildlife</a>
+                <a href="index.html#luxury" class="nav-link">Luxury</a>
+                <a href="index.html#visa" class="nav-link">Visa</a>
+                <a href="index.html#faq" class="nav-link">FAQ</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+                <a href="https://wa.me/+2687654321?text=Hello! I'm interested in Eswatini travel packages" class="nav-book-btn">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="gallery-hero-content">
+            <h1 class="gallery-hero-title">
+                Visual Journey Through
+                <span class="hero-gradient-text"> Eswatini</span>
+            </h1>
+            <p class="gallery-hero-subtitle">
+                Explore the breathtaking landscapes, vibrant culture, and incredible wildlife that make Eswatini unique
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="section-container">
+            <!-- Filter Buttons -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+                <button class="filter-btn" data-filter="landscape">Landscapes</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="public/rhino.jpeg" alt="Black Rhino" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Black Rhino</h3>
+                            <p>Mkhaya Game Reserve</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/rhino.jpeg', 'Black Rhino', 'Mkhaya Game Reserve')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="public/reed-dance.png" alt="Reed Dance Ceremony" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Reed Dance Ceremony</h3>
+                            <p>Umhlanga Festival</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/reed-dance.png', 'Reed Dance Ceremony', 'Umhlanga Festival')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="landscape">
+                    <img src="public/sunset.png" alt="African Sunset" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>African Sunset</h3>
+                            <p>Eswatini Wilderness</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/sunset.png', 'African Sunset', 'Eswatini Wilderness')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="wildlife">
+                    <img src="public/hlane.jpg" alt="Elephant Herd" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Elephant Herd</h3>
+                            <p>Hlane Royal National Park</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/hlane.jpg', 'Elephant Herd', 'Hlane Royal National Park')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="public/umhlanga.jpg" alt="Traditional Attire" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Traditional Attire</h3>
+                            <p>Swazi Cultural Dress</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/umhlanga.jpg', 'Traditional Attire', 'Swazi Cultural Dress')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="luxury">
+                    <img src="public/nisela.jpg" alt="Luxury Safari Lodge" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Luxury Safari Lodge</h3>
+                            <p>Premium Accommodations</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/nisela.jpg', 'Luxury Safari Lodge', 'Premium Accommodations')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="public/incwala.jpg" alt="Cultural Performance" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Cultural Performance</h3>
+                            <p>Traditional Dance</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/incwala.jpg', 'Cultural Performance', 'Traditional Dance')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="landscape">
+                    <img src="public/mantenga-nature-reserve.jpg" alt="Nature Reserve" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Mantenga Falls</h3>
+                            <p>Nature Reserve</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/mantenga-nature-reserve.jpg', 'Mantenga Falls', 'Nature Reserve')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="luxury">
+                    <img src="public/mbuluzi-tented-camp.png" alt="Tented Camp" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Luxury Tented Camp</h3>
+                            <p>Mbuluzi Game Reserve</p>
+                        </div>
+                        <button class="gallery-view-btn" onclick="openLightbox('public/mbuluzi-tented-camp.png', 'Luxury Tented Camp', 'Mbuluzi Game Reserve')">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i data-lucide="x"></i>
+            </button>
+            <img src="" alt="" class="lightbox-image" id="lightbox-image">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Discover Eswatini</h3>
+                    <p class="footer-description">
+                        Your gateway to experiencing the heart of Africa. Authentic culture, 
+                        incredible wildlife, and luxury accommodations await.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Experiences</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#experiences">Reed Dance Ceremony</a></li>
+                        <li><a href="index.html#experiences">Big Five Safaris</a></li>
+                        <li><a href="index.html#experiences">Cultural Villages</a></li>
+                        <li><a href="index.html#experiences">Luxury Lodges</a></li>
+                        <li><a href="index.html#experiences">Adventure Tours</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone" class="footer-contact-icon"></i>
+                            <span class="footer-contact-text">+268 7654 3210</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail" class="footer-contact-icon"></i>
+                            <span class="footer-contact-text">info@discovereswatini.com</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin" class="footer-contact-icon"></i>
+                            <span class="footer-contact-text">Mbabane, Eswatini</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 Discover Eswatini. All rights reserved. | <a href="privacy.html" style="color: #f97316;">Privacy Policy</a> | <a href="terms.html" style="color: #f97316;">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+
+        // Lightbox functionality
+        function openLightbox(src, title, description) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxDescription = document.getElementById('lightbox-description');
+            
+            lightboxImage.src = src;
+            lightboxImage.alt = title;
+            lightboxTitle.textContent = title;
+            lightboxDescription.textContent = description;
+            
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox on background click
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

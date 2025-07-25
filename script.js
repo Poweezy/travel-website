@@ -501,6 +501,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// FAQ functionality
+function toggleFAQ(button) {
+    const faqItem = button.closest('.faq-item');
+    const faqAnswer = faqItem.querySelector('.faq-answer');
+    const isActive = faqItem.classList.contains('active');
+    
+    // Close all other FAQ items
+    document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+            item.classList.remove('active');
+        }
+    });
+    
+    // Toggle current item
+    if (isActive) {
+        faqItem.classList.remove('active');
+    } else {
+        faqItem.classList.add('active');
+    }
+}
+
 // Console welcome message
 console.log(`
 🌍 Welcome to Discover Eswatini!
